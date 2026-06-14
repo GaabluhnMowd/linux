@@ -1,0 +1,5 @@
+# Auto-detect text files and normalize line endings to LF on commit
+* text=auto
+
+# Force LF for shell scripts (your debian.sh file)
+*.sh text eol=lf
