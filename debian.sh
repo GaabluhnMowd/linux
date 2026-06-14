@@ -13,7 +13,7 @@ sudo apt install -y \
   powerdevil \
   polkit-kde-agent-1 \
   xdg-desktop-portal-kde \
-  kde-gtk-config \
+  kde-config-gtk-style \
   network-manager
 
 sudo systemctl enable NetworkManager
