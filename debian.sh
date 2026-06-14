@@ -18,3 +18,7 @@ sudo apt install -y \
 
 sudo systemctl enable NetworkManager
 sudo systemctl start NetworkManager
+
+# Fix: Make NetworkManager manage all interfaces (fixes "unmanaged" issue)
+sudo sed -i 's/managed=false/managed=true/' /etc/NetworkManager/NetworkManager.conf
+sudo systemctl restart NetworkManager
